@@ -1,21 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React,{ useState} from 'react';
+
+//Navigation Rootstack
+import RootStack from './src/navigators/RootStack';
+
+
+
+import { store } from './src/store';
+import { Provider } from 'react-redux';
+
 
 export default function App() {
+ 
+  const [storedCredentials,setStoredCredentials]=useState("");
+
+  // //if app is not ready return apploading cmponents
+ 
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <Provider store={store}> 
+ 
+  <RootStack/>
+
+  </Provider> 
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

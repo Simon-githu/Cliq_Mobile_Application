@@ -1,14 +1,15 @@
 {
   "expo": {
-    "name": "CLIQ",
-    "slug": "CLIQ",
+    "name": "ESCPSPACES",
+    "slug": "ESCPSPACES",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/escpSpacesFavicon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/escpSpacesLogo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -21,7 +22,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-cliqIcon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
